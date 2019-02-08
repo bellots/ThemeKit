@@ -1,0 +1,6 @@
+framework module Pods_ThemeKit_Tests {
+  umbrella header "Pods-ThemeKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

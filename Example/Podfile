@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ThemeKit_Example' do
+  pod 'ThemeKit', :path => '../'
+
+  target 'ThemeKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

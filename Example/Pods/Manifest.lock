@@ -1,0 +1,16 @@
+PODS:
+  - ThemeKit (0.1.0)
+
+DEPENDENCIES:
+  - ThemeKit (from `../`)
+
+EXTERNAL SOURCES:
+  ThemeKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ThemeKit: 6f35bbd0245e92fc5f7c7812692d68669664917d
+
+PODFILE CHECKSUM: ba6f6189467123707ea51f0f84d513830ccc4429
+
+COCOAPODS: 1.4.0

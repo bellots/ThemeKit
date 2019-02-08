@@ -1,0 +1,22 @@
+{
+  "name": "ThemeKit",
+  "version": "0.1.0",
+  "summary": "A short description of ThemeKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Andrea Bellotto/ThemeKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Andrea Bellotto": "andreabellotto88@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Andrea Bellotto/ThemeKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ThemeKit/Classes/**/*"
+}
