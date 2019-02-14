@@ -45,7 +45,7 @@ import UIKit
         }
     }
     
-    @IBInspectable var customTintColor: UIColor?{
+    @IBInspectable public var customTintColor: UIColor?{
         didSet {
             setupImageView()
         }
