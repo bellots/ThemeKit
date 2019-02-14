@@ -64,3 +64,20 @@ class ViewController: UIViewController {
         self.cornerRadius = self.frame.size.height / 2
     }
 }
+
+@IBDesignable class DefaultButton3:DefaultButton{}
+@IBDesignable class DefaultButton4:DefaultButton{}
+@IBDesignable class DefaultButton5:DefaultButton{}
+@IBDesignable class DefaultButton6:DefaultButton{}
+@IBDesignable class DefaultButton7:DefaultButton{}
+@IBDesignable class DefaultButton8:DefaultButton{}
+@IBDesignable class DefaultButton9:DefaultButton{}
+@IBDesignable class DefaultButton10:DefaultButton{}
+@IBDesignable class DefaultButton11:DefaultButton{}
+@IBDesignable class DefaultButton12:DefaultButton{}
+@IBDesignable class DefaultButton13:DefaultButton{}
+@IBDesignable class DefaultButton14:DefaultButton{}
+@IBDesignable class DefaultButton15:DefaultButton{}
+@IBDesignable class DefaultButton16:DefaultButton{}
+@IBDesignable class DefaultButton17:DefaultButton{}
+

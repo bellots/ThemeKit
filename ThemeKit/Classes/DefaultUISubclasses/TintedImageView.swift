@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable open class TintedImageView: UIImageView {
     
-    enum Tint{
+    public enum Tint{
         case primary
         case secondary
         case accent
@@ -18,7 +18,7 @@ import UIKit
         case success
         case failure
         
-        var color:UIColor?{
+        public var color:UIColor?{
             switch self {
             case .primary:
                 return PrimaryTintedImageView.appearance().backgroundColor
@@ -36,7 +36,7 @@ import UIKit
         }
     }
     
-    var tint:Tint?{
+    open var tint:Tint?{
         didSet{
             guard let tint = tint else{
                 return
@@ -51,7 +51,7 @@ import UIKit
         }
     }
     
-    var enabled:Bool = true{
+    open var enabled:Bool = true{
         didSet{
             //            tintUIImageView = enabled ? Colors.ImageView.Tint.enabled : Colors.ImageView.Tint.disabled
         }
@@ -65,7 +65,7 @@ import UIKit
         super.init(frame: frame)
         setupImageView()
     }
-    override init(image: UIImage?) {
+    override public init(image: UIImage?) {
         super.init(image:image)
         setupImageView()
     }

@@ -8,4 +8,4 @@
 import Foundation
 import UIKit
 
-@IBDesignable class DefaultNavigationBar:UINavigationBar{}
+@IBDesignable open class DefaultNavigationBar:UINavigationBar{}

@@ -9,11 +9,11 @@ import Foundation
 import UIKit
 
 @IBDesignable open class DefaultView:UIView{}
-@IBDesignable class PrimaryTintedImageView:DefaultView{}
-@IBDesignable class SecondaryTintedImageView:DefaultView{}
-@IBDesignable class AccentTintedImageView:DefaultView{}
-@IBDesignable class ContrastTintedImageView:DefaultView{}
-@IBDesignable class SuccessTintedImageView:DefaultView{}
-@IBDesignable class FailureTintedImageView:DefaultView{}
+@IBDesignable open class PrimaryTintedImageView:DefaultView{}
+@IBDesignable open class SecondaryTintedImageView:DefaultView{}
+@IBDesignable open class AccentTintedImageView:DefaultView{}
+@IBDesignable open class ContrastTintedImageView:DefaultView{}
+@IBDesignable open class SuccessTintedImageView:DefaultView{}
+@IBDesignable open class FailureTintedImageView:DefaultView{}
 
 

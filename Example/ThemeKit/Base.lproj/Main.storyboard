@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2S3-TY-tAp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -25,7 +25,7 @@
                                 <rect key="frame" x="10" y="250.5" width="355" height="166.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try to press the button above and see what happens!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOq-CG-B5Z" customClass="MyLabel" customModule="ThemeKit_Example" customModuleProvider="target">
-                                        <rect key="frame" x="28" y="0.0" width="299" height="41"/>
+                                        <rect key="frame" x="30.5" y="0.0" width="294" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -37,7 +37,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCM-Gc-obW" customClass="CircleButton" customModule="ThemeKit_Example" customModuleProvider="target">
-                                        <rect key="frame" x="79.5" y="121.5" width="196" height="45"/>
+                                        <rect key="frame" x="82" y="121.5" width="191" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="2nd-Fh-jyE"/>
                                         </constraints>
@@ -71,6 +71,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+        <!--Show Case Style View Controller-->
+        <scene sceneID="7Z0-Mg-Lkf">
+            <objects>
+                <viewController storyboardIdentifier="ShowCaseStyleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2S3-TY-tAp" customClass="ShowCaseStyleViewController" customModule="ThemeKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P8T-zf-UsO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2Z-ac-si9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xbe-Vc-O3t">
+                                        <rect key="frame" x="0.0" y="-10" width="375" height="667"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xbe-Vc-O3t" firstAttribute="leading" secondItem="c2Z-ac-si9" secondAttribute="leading" id="KAB-23-sra"/>
+                                    <constraint firstAttribute="trailing" secondItem="xbe-Vc-O3t" secondAttribute="trailing" id="XGT-2X-mBv"/>
+                                    <constraint firstItem="xbe-Vc-O3t" firstAttribute="top" secondItem="c2Z-ac-si9" secondAttribute="top" id="XOk-X0-nTI"/>
+                                    <constraint firstAttribute="bottom" secondItem="xbe-Vc-O3t" secondAttribute="bottom" id="aXa-zn-uyQ"/>
+                                    <constraint firstItem="xbe-Vc-O3t" firstAttribute="width" secondItem="c2Z-ac-si9" secondAttribute="width" id="nno-yo-1wt"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c2Z-ac-si9" firstAttribute="leading" secondItem="YCS-Il-B5C" secondAttribute="leading" id="ESf-C8-Z1T"/>
+                            <constraint firstItem="c2Z-ac-si9" firstAttribute="top" secondItem="YCS-Il-B5C" secondAttribute="top" id="FBJ-XP-MdZ"/>
+                            <constraint firstItem="YCS-Il-B5C" firstAttribute="bottom" secondItem="c2Z-ac-si9" secondAttribute="bottom" id="S0b-lu-JEa"/>
+                            <constraint firstItem="YCS-Il-B5C" firstAttribute="trailing" secondItem="c2Z-ac-si9" secondAttribute="trailing" id="a1D-R9-5wv"/>
+                            <constraint firstItem="c2Z-ac-si9" firstAttribute="width" secondItem="P8T-zf-UsO" secondAttribute="width" id="m8N-vP-H9E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YCS-Il-B5C"/>
+                    </view>
+                    <connections>
+                        <outlet property="stackView" destination="xbe-Vc-O3t" id="FX3-t1-Vev"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7x9-nY-IS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="707"/>
         </scene>
     </scenes>
 </document>

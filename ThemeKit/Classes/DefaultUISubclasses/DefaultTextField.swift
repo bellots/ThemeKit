@@ -9,14 +9,14 @@ import Foundation
 import UIKit
 
 @IBDesignable open class DefaultTextField:UITextField{
-    enum KeyboardType{
+    public enum KeyboardType{
         case normal
         case email
         case password
         case numeric
     }
     
-    var type:KeyboardType = .normal{
+    public var type:KeyboardType = .normal{
         didSet{
             switch type{
             case .email:
