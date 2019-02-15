@@ -126,7 +126,7 @@ extension MyCustomThemeable{
         MyLabel.appearance().customFont = UIFont.boldSystemFont(ofSize: 30)
         SubtitleLabel.appearance().customTextColor = UIColor.hexStringToUIColor(hex: "#dff9fb")
         SubtitleLabel.appearance().customFont = UIFont.systemFont(ofSize: 30)
-
+        
     }
 }
 extension UIView{

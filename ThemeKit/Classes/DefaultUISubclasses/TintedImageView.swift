@@ -8,9 +8,13 @@
 import Foundation
 import UIKit
 
+public protocol Tintable{
+    var color:UIColor?{get}
+}
+
 @IBDesignable open class TintedImageView: UIImageView {
     
-    public enum Tint{
+    public enum Tint:Tintable{
         case primary
         case secondary
         case accent
@@ -36,7 +40,7 @@ import UIKit
         }
     }
     
-    open var tint:Tint?{
+    open var tint:Tintable?{
         didSet{
             guard let tint = tint else{
                 return
