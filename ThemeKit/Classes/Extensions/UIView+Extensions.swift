@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public extension UIView{
+extension UIView{
     public class var nameIdentifier:String {
         return String(describing: self)
     }
@@ -29,7 +29,7 @@ public extension UIView{
         return view
     }
     
-    @objc public func setupView()
+    @objc open func setupView()
     {
         let view = loadViewFromNib()
         view.frame = bounds
@@ -38,7 +38,7 @@ public extension UIView{
         addSubview(view)
     }
     
-    @IBInspectable var cornerRadius: CGFloat {
+    @IBInspectable public var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
@@ -48,7 +48,7 @@ public extension UIView{
         }
     }
     
-    @IBInspectable var borderWidth: CGFloat {
+    @IBInspectable  public var borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
@@ -57,7 +57,7 @@ public extension UIView{
         }
     }
     
-    @IBInspectable var borderColor: UIColor {
+    @IBInspectable public var borderColor: UIColor {
         get {
             if let layerColor = layer.borderColor {
                 return UIColor(cgColor: layerColor)
